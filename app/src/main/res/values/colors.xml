@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="record_first_color">#1f1e23</color>
+    <color name="record_second_color">#1a1a1c</color>
+    <color name="record_last_color">#7a46ff</color>
+    <color name="record_comment_text">#000000</color>
+</resources>

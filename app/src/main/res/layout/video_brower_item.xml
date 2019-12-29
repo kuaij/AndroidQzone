@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/mContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xiaok.androidqzone.custom.CircleImageView
+                android:id="@+id/video_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/head_picture" />
+
+            <TextView
+                android:id="@+id/video_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xiaok"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/video_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:text="刚刚"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_descripation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="#共迎冬奥# 冬奥"/>
+
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/video_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京市朝阳区"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/video_iv_good"
+                style="@style/VideoShareImageView"
+                android:src="@mipmap/video_share_good"
+                android:layout_toStartOf="@+id/video_iv_comment"
+                android:layout_marginEnd="20dp"/>
+            
+            <ImageView
+                android:id="@+id/video_iv_comment"
+                style="@style/VideoShareImageView"
+                android:src="@mipmap/video_share_comment"
+                android:layout_toStartOf="@+id/video_iv_share"
+                android:layout_marginEnd="20dp"/>
+
+            <ImageView
+                android:id="@+id/video_iv_share"
+                style="@style/VideoShareImageView"
+                android:src="@mipmap/video_share_share"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/video_et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="评论"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:drawableRight="@drawable/video_send_picture"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_record_play"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="192dp"/>
+
+</FrameLayout>
